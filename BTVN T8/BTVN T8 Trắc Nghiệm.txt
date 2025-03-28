@@ -1,0 +1,84 @@
+Họ và Tên: Nguyễn Hoàng Việt - 24022843
+I. Trắc Nghiệm
+Câu 1. 
+int a = 5; 
+int x = 2; 
+a += (x > 0 ? 1: 0); 
+cout << a;                => kết quả in ra: D) 6
+
+Câu 2.
+void towerOfHanoi(int n, char from_rod, char to_rod, char 
+aux_rod) { 
+if (n == 1) { 
+cout << "Move disk 1 from rod " << from_rod << " to rod 
+" << to_rod << endl; 
+return; 
+} 
+towerOfHanoi(n - 1, from_rod, aux_rod, to_rod); 
+cout << "Move disk " << n << " from rod " << from_rod << " 
+to rod " << to_rod << endl; 
+towerOfHanoi(n - 1, aux_rod, to_rod, from_rod); 
+}
+
+=> Số lượng bước cần thiết để chuyển 3 đĩa từ  A  sang  C  là C) 7
+
+Câu 3.
+void printArray(int arr[], int size) { 
+for (int i = 0; i < size; i++) 
+cout << arr[i] << " "; 
+} 
+Khi gọi  printArray(arr, 5)  với  arr  là  {1, 2, 3, 4,  5} => kết quả in ra A) 1 2 3 4 5
+
+Câu 4.
+Giả sử có một mảng  arr = {5, 1, 4, 2, 8}  . Bạn được  yêu cầu sắp xếp mảng tăng 
+dần bằng phương pháp nổi bọt, sau lần sắp xếp đầu tiên, mảng sẽ trông như thế nào?
+=> C) 1 4 2 5 8
+
+Câu 5.
+Điều kiện của vòng lặp nào sau đây sẽ làm vòng lặp chạy vô hạn? 
+x = -1; 
+while (condition) { 
+// code 
+} 
+=> A)condition = true
+
+Câu 6.
+int factorial(int n) { 
+if (n <= 1) 
+return 1; 
+else 
+return n * factorial(n - 1); 
+} 
+=> Giá trị của  factorial(4)  là C)24
+
+Câu 7.
+Hàm tìm kiếm nhị phân trả lại vị trí của key trong mảng hoặc trả về -1. Giả sử có một 
+mảng đã sắp xếp  arr = {1, 3, 5, 7, 9}  . Chúng ta cần  tìm kiếm giá trị  2  . Giá trị trả 
+về của hàm tìm kiếm nhị phân là gì? => C) -1;
+Câu 8.
+void changeValue(int &x) { 
+x = 10; 
+} 
+Nếu gọi hàm  changeValue(a)  với  a  là  5  , giá trị của  a  sau khi gọi hàm sẽ là =>
+B) 10;
+
+Câu 9. 
+void incrementByValue(int x) { 
+x++; 
+} 
+void incrementByReference(int &x) { 
+x++; 
+} 
+Nếu gọi hàm  incrementByValue(a)  và  incrementByReference(b)  với  a  và  b  đều 
+là  5  , giá trị của  a  và  b  sau khi gọi hàm sẽ lần lượt  là bao nhiêu? 
+=> C) 5,6
+ Câu 10. 
+int fibonacci(int n) { 
+if (n <= 1) 
+return n; 
+else 
+return fibonacci(n - 1) + fibonacci(n - 2); 
+} 
+Giá trị của  fibonacci(6)  là bao nhiêu?  
+=> B) 8;
+
